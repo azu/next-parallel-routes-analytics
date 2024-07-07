@@ -43,6 +43,7 @@ export default function Home() {
     <ul>
       <li>
         <Link href={"/a"}>Page A</Link>
+        <Link href={"/b"}>Page B</Link>
       </li>
     </ul>
     <ErrorBoundary fallback={<>Error</>}>

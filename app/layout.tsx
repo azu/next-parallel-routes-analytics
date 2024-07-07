@@ -11,11 +11,13 @@ export const metadata: Metadata = {
 export default function RootLayout({
                                      children,
                                      list,
-                                     detail
+                                     detail,
+                                     analytics
                                    }: Readonly<{
   children: React.ReactNode;
   list: React.ReactNode;
   detail: React.ReactNode;
+  analytics: React.ReactNode;
 }>) {
   return (
     <html lang="en">
@@ -25,6 +27,7 @@ export default function RootLayout({
           display: "flex",
           gap: "24px"
         }}>
+          {analytics}
           {children}
           {list}
           {detail}
